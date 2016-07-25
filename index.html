@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<script src="jquery-2.2.1.js"></script>
+	<title>Betting Game</title>
+	<script src="mathgame.js"></script>
+</head>
+
+<body>
+<h1>Welcome to The Betting Game</h1>
+<div>
+  <h4>Instructions</h4>
+    <p>You currently have <span id="goldId"></span> money</p>
+    <p>Place a bet between $5 and $10 and choose a number between 1 and 10.  If you guess the correct number you will win that amount that you bet!  If you're off by one, you can keep your money!  If you're completely wrong, you lose your money!</p>
+  <form onsubmit="return false">
+    Place your bet ($5-$10):<br>
+    <input id="amount"type="text" name="bet"><br>
+    Choose your Number (1-10):<br>
+    <input id="playerNumber"type="text" name="numberchoice"><br>
+    <button id="button">Submit</button><br>
+    <button id='restart' style='display: none;'>Play Again</button>
+  </form>
+</div>
+  <p id="result">The correct number was <span id="test"></span></p>
+  <style>
+    #result {opacity: 0;}
+  </style>
+</body>
+
+</html>
